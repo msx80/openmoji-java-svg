@@ -3,7 +3,9 @@
   <groupId>com.github.msx80</groupId>
   <artifactId>openmoji-java-svg</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+   <scm>
+    <developerConnection>scm:git:https://github.com/msx80/openmoji-java-svg.git</developerConnection>
+  </scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>8</maven.compiler.source>
@@ -20,4 +22,15 @@
 </dependency>
 
 </dependencies>  
+
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M7</version>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
